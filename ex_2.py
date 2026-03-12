@@ -12,7 +12,7 @@ while True:
     """
     print(menu)
 
-    opcao = int(input("Digite a opção de figura que deseja calcular: "))
+    opcao = int(input("Digite o número da figura geométrica que deseja calcular: "))
 
     match opcao:
         case 1:
@@ -23,7 +23,7 @@ while True:
         case 2:
             base= float(input("Digite o valor da base do seu triâgulo: "))
             altura = float(input("Digite o valor da altura do seu triângulo: "))
-            area_2 = base * altura / 2
+            area_2 = (base * altura) / 2
             print(f"O valor da área do seu triângulo é {area_2} cm")
 
         case 3:
@@ -31,6 +31,7 @@ while True:
             largura = float(input("Digite o valor da largura do seu retângulo: "))
             area_3 = comprimento * largura
             print(f"O valor da área do seu retângulo é {area_3} cm")
+
         case 4:
             print("Saindo...")
             break
